@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./zadacaedit.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <title>🏠Home</title>
+      </head>
+      <style>
+        table {
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 5px;
+		}
+    .main{
+      margin-left: 200px;
+    }
+      </style>
+  <body>
+    <div class="wrapper">
+        <!-- TukaHeader -->
+        <header class="header">
+         <!-- TukaHeader -->
+         <nav>
+         <div class="topnav">
+            <div class="search-container">
+              <form>
+                <a href="/Home.html"><img src="./ImagesWeb/zpSocialLogo.png" alt="LogoPhotoSreach" id="logosreach"></a>
+                <input type="text" placeholder="Пребарај.." name="search" id="inputBox">
+                <button type="submit" id="inputBox1"><i class="fa fa-search">Search</i></button>
+              </form>
+            </div>
+          </div>
+          <!-- za login Notification  meseenger-->
+         
+        <div id="LoginNM" onclick="settingsMenuToggle()">
+        
+           <a href="#"><img src="./ImagesWeb/webpost.png" id="login" title="Login"></a> 
+          
+            </div> 
+            <div>
+              <img src="./ImagesWeb/notification.png" alt="Notification"  title="Notification" id="Notification">
+            </div>
+            <div>
+              <img src="./ImagesWeb/meseenger.png" alt="meseenger" title="meseenger" id="meseenger">
+            </div>
+          </nav>
+          <!-- Settings menu login -->
+          
+          <div class="settings-menu">
+            <div id="dark-btn">
+              <span>
+
+              </span>
+
+            </div>
+            <div  class="settings-menu-inner">
+              <div id="user-profile">
+
+                <img src="./ImagesWeb/webpost.png">
+                <div>
+                  <p>Zdravko Petkovski</p>
+                <a href="/Profile/profile.html" id="seeYouProfileandhelp">See you are profile</a>
+                
+   
+                </div>                                          
+            </div>
+            <hr>
+              <!-- second text  -->
+              
+            <div id="user-profile">
+   
+             <img src="./ImagesWeb/feedback.png">
+             <div>
+               <p>Give Feedback</p>
+               <a href="#" id="seeYouProfileandhelp">Help us to improve the new design</a>
+               
+            </div>
+          </div> 
+          <div id="settings-links">
+           <img src="./ImagesWeb/settingOption.png" id="setting-icon" style="width: 17px;">
+           <a href="#">Settings & privacy<img src="./ImagesWeb/arrowImage.png" style="width: 10px;"></a>
+
+          </div>
+          <div id="settings-links">
+            <img src="./ImagesWeb/HelpImage.png" id="setting-icon" style="width: 17px;">
+            <a href="#">Help & Support<img src="./ImagesWeb/arrowImage.png" style="width: 10px;"></a>
+ 
+           </div>
+           <div id="settings-links">
+            <img src="./ImagesWeb/Display Accessibility.png" id="setting-icon" style="width: 17px;">
+            <a href="#">Display & Accessibility <img src="./ImagesWeb/arrowImage.png" style="width: 10px;"></a>
+ 
+           </div>
+           <div id="settings-links">
+            <img src="./ImagesWeb/Logout.png" id="setting-icon" style="width: 17px;">
+            <a href="/LogoutPage/Logout.html">Logout <img src="./ImagesWeb/arrowImage.png" style="width: 10px;"></a>
+ 
+           </div>
+           <!-- Settings menu login -->
+          
+            <!-- Notification settings -->
+            <div class="settings-menu">
+              
+
+
+            </div>
+            <!-- za chat Opcijata -->
+            
+           
+                    
+                  
+                
+           
+                   
+          
+            
+        </header>  <!-- TukaHeader -->
+       
+        <section class="content">
+          <div class="columns">
+            <!-- Tuka za main post  -->
+            <main class="main">
+                <!-- Tuka za main post  -->
+             
+                
+                
+              
+
+                <!-- Za Post -->
+                <section id="write-post">
+                  <div id="user-profile">
+
+                    <img src="./ImagesWeb/webpost.png" alt="">
+                    <div>
+                      <p>Zdravko Petkovski</p>
+                      <small>Public <svg style="width: 12px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6L269.8 394.5c-3.8 3.5-8.7 5.5-13.8 5.5s-10.1-2-13.8-5.5L135.1 294.6c-4.5-4.2-7.1-10.1-7.1-16.3c0-12.3 10-22.3 22.3-22.3l57.7 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 57.7 0c12.3 0 22.3 10 22.3 22.3c0 6.2-2.6 12.1-7.1 16.3z"/></svg></small>
+
+                    </div> 
+                   
+                  </div>
+                     <div id="PostInput" >
+                      <textarea  rows="3" placeholder="Post" id="myText" id="myText"></textarea>
+                      <button type="button" class="btn btn-primary btn-sm" id="PostButton" onclick="displayImage()"><Img src="./ImagesWeb/PostTextButton.png" style="width: 40px;"></Img></button>
+                       <div id="addPostLink">
+                        <a href="#"><img src="./ImagesWeb/live-videoPost.png">Live Video</a>
+                        <a href="#" > <div class="image-upload">
+                          <label for="file">
+                            <img id="addPostLink" src="./ImagesWeb/VideoAndPhotos.png"/>
+                          </label>
+                          <input id="file" type="file" accept="image/*" style="display: none;" />
+                        </div>Video/Photo </a>
+                        <a href="#"><img src="./ImagesWeb/feeling-emoji.png">Feeling</a>
+                       
+                         
+
+                       </div>  
+                       
+                        
+                     </div>  
+                    
+                     
+                   
+                </section> <div id="postHomePage">
+                  <div id="user-profile">
+  
+                    <img src="./ImagesWeb/webpost.png" alt="">
+                    <div>
+                      <p>Zdravko Petkovski</p>
+                      <span>April 25 2023, 18:00 pm</span>
+                    
+                    </div> 
+                    
+                    <div id="posts-container111" style="margin-left: -140px; margin-top: 50px;"></div><br>
+                    <div id="output"></div><br>
+                    <img id="uploadedImg" style="width: 400px; margin-left: -460px; background: center; border-radius: 0%;margin-top: 280px;"><br><br>
+                    
+                   
+                    
+                 </div><hr>
+                 <section id="post-rows">
+                  <section id="activity-icon">
+                 <a href="#"><section><img src="./ImagesWeb/LikePost.png" title="Like" >120</section></a>
+                 <a href="#"><section><img src="./ImagesWeb/commentPost.png" title="Commnet">44</section></a>
+                 <a href="#"><section><img src="./ImagesWeb/sharePost.png" title="Share">20</section></a>
+                  
+
+                  </section>
+                  <section id="post-profile-icon">
+                   
+
+                  </section><br>
+                 
+                  
+                  
+                 <!-- <div id="imageContainer"></div> -->
+                <!-- Za Post -->  
+               
+                  
+                  
+                <!-- </p><br>
+                <-- <div id="postHomePage">
+                  <div id="user-profile">
+
+                    <img src="./ImagesWeb/webpost.png" alt="">
+                    <div>
+                      <p>Zdravko Petkovski</p>
+                      <span>April 25 2023, 18:00 pm</span>
+                      
+                    </div> 
+                    <p id="post-text">New Post PhotoGraphy By me/mountain Beautiful sunny day, mountain beauty at<br> the top with snow and a wonderful view🗻️☀️</p>
+                   
+                    
+                 </div>
+                 <img src="./ImagesWeb/IMG_ZdravkoPhotoGraphy.jpg" id="post-img"><hr> -->
+                 <!-- Like commnet share -->
+                 <!-- <section id="post-rows">
+                   <section id="activity-icon">
+                  <a href="#"><section><img src="./ImagesWeb/LikePost.png" title="Like" >120</section></a>
+                  <a href="#"><section><img src="./ImagesWeb/commentPost.png" title="Commnet">44</section></a>
+                  <a href="#"><section><img src="./ImagesWeb/sharePost.png" title="Share">20</section></a>
+                   
+
+                   </section>
+                   <section id="post-profile-icon">
+
+                   </section>
+ 
+                 </section> --> 
+                 <!-- post2 -->
+                 
+                 <!-- post2 -->
+                 
+                 <!-- Za Post -->  
+                 <!-- Tuka za chat -->
+                 
+                 
+
+                 
+
+            </main>
+            <!-- tuka za nav link od leva strana -->
+            <aside class="sidebar-first">
+                <!-- tuka za nav link od leva strana -->
+                <div class="container mt-3">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="./Home.html"  id="bojaNaNews" title="News Feed"><img src="./ImagesWeb/newsfeed.png" id="FeedPhoto" >News Feed</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Profile/profile.html" id="bojaProfile" title="Profile"><img src="./ImagesWeb/webpost.png" id="ProfilePhoto" >Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/Friends/FriendsPage.html" id="BojaFriends" title="Friends"  ><img src="./ImagesWeb/2786213.png" id="FriendsPhoto" >Friends</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#postHomePage" id="bojaMostRecent" title="Most Recent"><img src="./ImagesWeb/MostRecent.png" id="MostRecentPhoto">Most Recent</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="bojawatch" title="Watch"><img src="./ImagesWeb/wachM.png" id="watchPhoto">Watch</a>
+                      </li>
+                        
+                      
+                    
+                    </ul>  
+                     
+                  </div>
+                  <!-- od tuka see more opcijata od levo nav-->
+                  <span id="dots"></span><span id="more"> 
+                  <div class="container mt-3">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="./Web.html"  id="bojaMemoriesText" title="Memories"><img src="./ImagesWeb/memoris.jpg" id="MemoriesPhoto">Memories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="bojaEventText" title="Event"><img src="./ImagesWeb/event.png" id="EventPhoto">Event</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="BojafavoritesText" title="favorites"><img src="./ImagesWeb/favorites.png" id="favoritesPhoto">favorites</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="bojagroupsText" title="Groups"><img src="./ImagesWeb/group.png" id="groupstPhoto">Groups</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="bojaLiveText" title="Live"><img src="./ImagesWeb/Live.png" id="LivePhoto">Live</a>
+                      </li>
+                        
+                    </ul>
+                    
+                  </div></span>
+                  <!-- <button onclick="seeMore()" id="myBtn">See More</button> -->
+                  <!-- <button type="button" class="btn btn-primary btn-sm"onclick="seeMore()" id="myBtn">See More</button> -->
+                  <button type="button" class="btn btn-secondary" onclick="seeMore()" id="myBtn">See More</button><hr>
+                    <!-- od tuka see more opcijata od levo nav -->
+                    <section>
+                      <section>
+                      <p id="ContactsTextLeftNav">Contacts</p>
+                      <section>
+                        <figure>
+                          
+                          <a href=""><img src="./ImagesWeb/newCall.png" alt="" id="callPhone" title="New Call"></a>
+                        </figure>
+                        <figure>
+                          <a href=""><img src="./ImagesWeb/search.webp" alt="" id="search" title="Search by Name"></a>
+                        </figure>
+                        <!-- Online People Chat -->
+                        
+                          <p id="Online1Text1">Cristiano Ronaldo</p>
+                      <figure>
+                      <img id="onlinePhoto1" src="./ImagesWeb/OnlineChat1.png" alt="" title="Cristiano Ronaldo">
+                      </figure>
+                      <p id="Online1Text2">Michael Jordan</p>
+                      <figure>
+                      <img id="onlinePhoto2" src="./ImagesWeb/OnlineChat2.png" alt="" title="Michael Jordan">
+                      </figure>
+                      <p id="Online1Text3">Stephen Curry</p>
+                      <figure>
+                      <img id="onlinePhoto3" src="./ImagesWeb/OnlineChat3.png" alt="" title="Stephen Curry">
+                      </figure>
+                      <p id="Online1Text4">LeBron James</p>
+                      <figure>
+                      <img id="onlinePhoto4" src="./ImagesWeb/OnlineChat4.png" alt="" title="LeBron James">
+                      </figure>
+                      <p id="Online1Text5">Gordon Matthew</p>
+                      <figure>
+                      <img id="onlinePhoto5" src="./ImagesWeb/OnlineChat5.png" alt="" title="Gordon Matthew">
+                      </figure>
+                      <p id="Online1Text6">Frank Lampard</p>
+                      <figure>
+                      <img id="onlinePhoto6" src="./ImagesWeb/OnlineChat6.png" alt="" title="Frank Lampard">
+                      </figure>
+                      <p id="Online1Text7">Brad Pitt</p>
+                      <figure>
+                      <img id="onlinePhoto7" src="./ImagesWeb/OnlineChat7.png" alt="" title="Brad Pitt">
+                      </figure>
+                       <!-- Online People Chat -->
+                      </section><hr>
+                      <!-- Group conversations -->
+                     
+                      <p id="GroupConversationsText">Group conversations</p>
+                      <a href="" id="zaTextHrefOnlineGropuChelsea" title="Chelsea Group">
+                      <p id="TextOnline1Group">Chelsea</p>
+                      <figure>
+                        <img id="GroupConversationsPhoto" src="./ImagesWeb/GroupOnline1.png" alt="" title="">
+                        </figure>
+                        </a>
+                        <a href="" id="NewGroupHrefCreateText" title="Create New Group">
+                        <p id="TextGroupCreate"><strong>Create New Group</strong></p>
+                        <figure>
+                          <img id="createGroupPhoto" src="./ImagesWeb/CreateNewGroup.png" alt="" title="">
+                          </figure>
+                        </a>
+
+                        <!-- Group conversations -->
+            </aside>
+            <!-- TukaNav ili drugi raboti od desna strana  -->
+            <aside class="sidebar-second">
+            <!-- TukaNav ili drugi raboti od desna strana  -->
+            <section>
+                <figure>
+                <img id="photoright" src="./ImagesWeb/sponsored.png" alt="">
+
+                </figure>
+            </section>
+            <section><hr>
+                <figure>
+                    <p id="pagepr"> Your Pages and profiles</p>
+                    <section>
+                        <p id="zpPhotoLeft">ZdravkoPhotoGraphy</p>
+                    </section>
+                    <figure>
+                    <img id="zpPhotoGraphy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGt1Suf1Z3TbWiz0loSP3m4LiEPLDfCFCAxcQfBJk3kfVfPOW0HggDSBTgdIs7DHNfuzI&usqp=CAU" alt="">
+                    </figure>
+                </figure>
+                <section>
+                    <p id="Switch">Switch into Page</p>
+                </section>
+                <figure>
+                    <img id="zpswich" src="./ImagesWeb/png-clipart-computer-icons-arrow-switch-volume-icon-miscellaneous-angle.png" alt="">
+                </figure>
+                <section>
+                    <p id="promotionText">Create Promotion</p>
+                </section><hr>
+                <figure>
+                    <img id="promotionPhoto" src="./ImagesWeb/promotion.png" alt="">
+                    <figure>
+                        <p id="FriendRequestsText">Friend requests <article id="seeAll"><a href="/Friends/FriendsPage.html" style="text-decoration: none;"> See all</a></article></p>
+                     </figure>
+                     <section id="NovakTextAdd">
+                       <a href="https://www.facebook.com/djokovicofficial" target="_blank" title="Novak Djokovic"> <p>Novak Djokovic</p></a>
+                    </section>
+                     <section>
+                        <p id="mutualFriends">89 mutual friends</p>
+                      <img id="mutualFriendsPhoto" src="./ImagesWeb/mutualFriends.png" alt="">
+                     </section>
+                     <figure>
+                        <img id="NoleAdd" src="https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg" alt="">
+                     </figure>
+                     <section id="ButtonTogether">
+                     <button type="button" class="btn btn-primary" id="colorButonLeft" onclick="showAccept()" >Confirm</button>
+                     <button type="button" class="btn btn-light"  id="colorButonRight" onclick="showAccept1()">Delete</button>
+                     </section><hr>
+                     <p id="BirthdaysTextUp">Birthdays</p>
+                     <section id="brthdayText">
+                      <p><strong>Cristiano Ronaldo</strong>  and 8<strong> others</strong></br> have birthdays today.</p>
+                      <figure>
+                        <img id="BrithdayPhoto" src="/ImagesWeb/3620659.png" alt="">
+                      </figure>
+                      
+                     </section><hr>
+                     <p id="YourShortcuts">Your shortcuts</p>
+                     <a href="">
+                     <figure>
+                      <img src="/ImagesWeb/Yourshortcuts.png" alt="" id="EditPhotoShortcuts" title="Edit">
+                     </figure>
+                    </a>
+                    <a href="https://codecademy.mk/" id="CodeAcademy" target="_blank" title="Code Academy*****">
+                    <p id="shortcutsText1">Code Academy</p>
+                    <figure>
+                    <img id="shortcutsPhoto1" src="./ImagesWeb/CodeAcademy.png" alt="" title="Code Academy*****">
+                    </figure>
+                    </a>
+                
+                     
+                </figure>
+                
+
+            </section>
+
+           
+        <!-- <footer class="footer">Footer: Fixed height</footer> -->
+      </div>
+
+      <!-- <footer class="footer">Footer: Fixed height</footer> -->
+        
+
+
+
+
+
+   <script src="/webSite1.js"></script>
+  </body>
+</html>

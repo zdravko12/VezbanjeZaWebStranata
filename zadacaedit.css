@@ -1,0 +1,2118 @@
+body{
+    margin: 0;
+    background: rgb(179, 179, 179);
+    /* transition: background 0.3s; */
+   
+      
+    
+  } 
+/* za theme ke vidam */
+  :root{
+    --body-color: #efefef; 
+    --nav-color:  #1876f2;
+    --bg-color: #fff;
+
+  }
+  .wrapper{
+    min-height: 100vh;
+    background: #dbdada;
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    height: 60px;
+    background: #707172;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-image: url("/ImagesWeb/headerBackground.png");
+    background-size: cover;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
+    
+    
+    
+    
+    
+    
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    background: #999;
+    color: #000; 
+  }
+  .columns{
+    display: flex;
+    flex:1;
+    background-color: #eee;;
+  }
+  .main{
+    flex: 1;
+    order: 2;
+    background: #eee;
+    padding-top: 50px;
+    
+   
+    
+
+  }
+  .sidebar-first{
+    width: 15%;
+    background: #ccc;
+    order: 1;
+    margin-top: 50px;
+    background-image: url("/ImagesWeb/headerneewww.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    
+    
+  }
+ 
+  @media screen and (max-width: 590px) {
+    .sidebar-first{
+        display: none;
+        
+    }
+  }
+  @media screen and (max-width: 590px) {
+    .sidebar-second{
+        display: none;
+      
+    }
+  }
+  .sidebar-first:hover{
+    overflow-y: scroll;
+  }
+  
+  .sidebar-second{ 
+    width: 15%;
+    order: 3;
+    background: #ddd;
+    padding-top: 55px;
+    width: auto;
+    background-image: url("/ImagesWeb/headerneewww.jpg");
+    background-size: cover;
+  
+    
+  }
+  
+/* nav link od levo */
+  #FeedPhoto{
+    width: 21px
+    
+}
+.nav-item a:hover{
+    background-color: #68686829;
+    border-radius: 30px;
+}
+#bojaNaNews{
+    color: black;
+    font-size: 20px;
+}
+
+#bojaNaNews:hover{
+    color: #3c6e8b;
+    background-color: #72707039;
+    border-radius: 50px;
+}
+#ProfilePhoto{
+    width: 35px;
+    margin-left: -10px;
+    border-radius: 5px;
+
+}
+#bojaProfile:hover{
+    color: #4a84a5;
+   
+}
+
+#bojaProfile{
+    color: black;
+    font-size: 20px;
+
+}
+#FriendsPhoto{
+    width: 34px;
+    margin-left: -10px;
+}
+
+#BojaFriends{
+    color: black;
+    font-size: 20px;
+}
+
+#BojaFriends:hover{
+    color: #3c6e8b;
+
+
+}
+#MostRecentPhoto{
+    width: 34px;
+    margin-left: -10px;
+    background-color: #009af34e;
+    border-radius: 20px;
+    border: 0.1px solid rgba(0, 0, 0, 0.122);
+
+}
+
+#bojaMostRecent{
+    color: #000;
+}
+#bojaMostRecent:hover{
+    color: #3c6e8b;
+
+}
+
+#watchPhoto{
+    width: 34px;
+    margin-left: -10px;
+    border-radius: 7px;
+    border: 0.1px solid rgba(0, 0, 0, 0.122);
+
+}
+#bojawatch{
+    color: #000;
+}
+#bojawatch:hover{
+    color: #3c6e8b;
+}
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+
+
+#MemoriesPhoto{
+    width: 34px;
+    margin-left: -10px;
+    border-radius: 30px;
+    border: 0.1px solid rgba(0, 0, 0, 0.122);
+}
+
+#bojaMemoriesText{
+    color: #000;
+}
+#bojaMemoriesText:hover{
+    color: #318abe;
+}
+
+#EventPhoto{
+    width: 34px;
+    margin-left: -10px;
+}
+#bojaEventText{
+    color: #000; 
+}
+#bojaEventText:hover{
+    color: #318abe;
+}
+#favoritesPhoto{
+    width: 34px;
+    margin-left: -10px;
+}
+#BojafavoritesText{
+    color: #000;
+}
+#BojafavoritesText:hover{
+    color: #318abe;
+}
+
+#groupstPhoto{
+    width: 34px;
+    margin-left: -10px; 
+}
+#bojagroupsText{
+    color: #000;
+}
+#bojagroupsText:hover{
+    color: #318abe;
+}
+#LivePhoto{
+    width: 34px;
+    margin-left: -10px;   
+}
+#bojaLiveText{
+    color: #000;
+}
+#bojaLiveText:hover{
+    color: #318abe;
+}
+
+/* nav link od levo*/
+
+/* so nav link od levo Online People  */
+#ContactsTextLeftNav{
+    color: #3d3c3c;
+}
+#callPhone{
+    margin-left: 120px;
+    margin-top: -80px;
+    width: 17px;
+    
+}
+#callPhone:hover{
+     border-radius: 50px;
+     background-color: #8b8b8b34; 
+      padding-bottom: 10px; 
+      padding: -20px;
+      box-shadow: 1px 1px 1px;
+      
+      
+}
+#search{
+    width: 13px;
+    margin-left: 170px;
+    margin-top: -158px;
+}
+
+#search:hover{
+    border-radius: 50px;
+    background-color: #8b8b8b34; 
+     padding-bottom: 10px; 
+     padding: -30px;
+     box-shadow: 1px 1px 1px;
+
+
+}
+
+#Online1Text1{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -75px;
+    
+}
+#onlinePhoto1{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#onlinePhoto1:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text1:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto2:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text2:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto3:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text3:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto4:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text4:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto5:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text5:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto6:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text6:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#onlinePhoto7:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text7:hover{
+    background-color: #6b6b6b2f;
+    border-radius: 30px;
+
+}
+#Online1Text2{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto2{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#Online1Text3{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto3{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#Online1Text4{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto4{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#Online1Text5{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto5{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#Online1Text6{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto6{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+#Online1Text7{
+    margin-top: 30px; 
+    margin-left: 45px;
+    margin-top: -30px;
+    
+}
+#onlinePhoto7{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+
+}
+/* so Hr nav link od levo Online People  */
+
+/* Tuka GroupConversation isto levo  */
+#GroupConversationsText{
+    color: #515050;
+}
+#GroupConversationsPhoto{
+    width: 50px;
+    height: 45px;
+    margin-top: -85px;
+   
+}
+/* Za Href Linkovi Group levo */
+#zaTextHrefOnlineGropuChelsea{
+    text-decoration: none;
+    color: #000;
+}
+#zaTextHrefOnlineGropuChelsea:hover{
+    color: #3c6e8b;
+    
+}
+#TextOnline1Group:hover{
+    background-color: #6262621f;
+    border-radius: 30px;
+
+}
+#GroupConversationsPhoto:hover{
+    background-color: #6262621f;
+    border-radius: 30px;
+
+}
+#TextGroupCreate:hover{
+    background-color: #6262621f;
+    border-radius: 30px;
+
+}
+#createGroupPhoto:hover{
+    background-color: #6262621f;
+    border-radius: 30px;
+
+}
+
+#NewGroupHrefCreateText{
+    text-decoration: none;
+    color: #000;
+}
+#NewGroupHrefCreateText:hover{
+    color: #3c6e8b;
+    
+   
+    
+}
+/* Za Href Linkovi Group levo */
+
+#TextOnline1Group{ 
+    margin-left: 45px;
+    margin-top: 30px;
+
+}
+#TextGroupCreate{
+    margin-left: 45px;
+    margin-top: -35px;
+    font-size: 13px;
+
+}
+
+#createGroupPhoto{
+    width: 30px;
+    margin-top: -85px;
+    margin-left: 10px;
+    border: 1px solid rgba(84, 83, 83, 0.712);
+    border-radius: 40px;
+    background-color: #5150501a;
+     
+
+}
+
+
+
+
+
+/* Tuka GroupConversation isto levo  */
+
+/* za sreach logo i header  */
+#logosreach{
+    width: 50px;
+    height: 40px;
+    margin-left: -10px;
+   
+   
+}
+
+#login{
+    width: 45px;
+    float: right;
+     border: 0.3px solid rgb(64, 64, 64) ;
+     border-radius: 60px;
+     background-color: #b3b1b1b5;
+
+}
+#login:hover{
+    background-color: #5ebef662;
+    
+} 
+
+#Notification{
+    width: 45px;
+    float: right;
+    border: 1px solid rgb(64, 64, 64) ;
+    border-radius: 150px;
+    background-color: #b3b1b1b5;
+    animation-name: example13;
+    transition: 10s;
+    animation: example13 10s; 
+
+}
+#Notification:hover{
+    background-color: #5ebef657;
+    
+} 
+
+  @keyframes example13 {
+    0% { transform: rotate(0deg); }
+    8.0% { transform: rotate(0deg); background-color: rgba(255, 0, 0, 0.081);}
+    12.0% { transform: rotate(42deg); }
+    16.0% { transform: rotate(-35deg); }
+    20.0% { transform: rotate(0deg); }
+    23.0% { transform: rotate(28deg); }
+    26.0% { transform: rotate(-20deg); }
+    29.0% { transform: rotate(0deg); }
+    31.0% { transform: rotate(16deg); }
+    33.0% { transform: rotate(-12deg); }
+    35.0% { transform: rotate(0deg); }	
+    37.0% { transform: rotate(-6deg); }
+    39.0% { transform: rotate(0deg); }
+    40.0% { transform: rotate(6deg); }
+    44.0% { transform: rotate(-3deg); }
+    49.0% { transform: rotate(2deg);}
+    55.0% { transform: rotate(0deg); }
+    62.0% { transform: rotate(1deg); }
+    70.0% { transform: rotate(0deg);  }  
+  }
+  
+  /* @keyframes example13 {
+    0%   {background-color: rgba(255, 0, 0, 0.093);}
+    25%  {background-color: rgba(255, 0, 0, 0.536);}
+    50%  {background-color: rgba(255, 0, 0, 0.31);}
+    75%  {background-color: rgba(255, 0, 0, 0.248);}
+    100% {background-color: rgba(255, 0, 0, 0);}
+  }  */
+
+#meseenger{
+    width: 45px;
+    float: right;
+    border: 1px solid rgb(64, 64, 64) ;
+    border-radius: 60px;
+    background-color: #b3b1b1b5;
+    
+
+}
+#meseenger:hover{
+    background-color: #5ebef657;
+    
+} 
+#LoginNM{
+    margin: 4px;
+    margin-top: -55px;
+   
+   
+}
+ #login,#Notification,#meseenger{
+    margin: 3px;
+    
+} 
+
+
+.topnav{
+    margin: 10px;
+}
+#inputBox{
+    border-radius: 10px;
+    
+}
+#inputBox:hover{
+    border-radius: 10px;
+    border-color:  1px solid #009af3;
+    
+    
+}
+#inputBox1:hover{
+    background-color: #5ebef657;
+}
+/* od tuka za login opcijata click */
+.settings-menu{
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    margin-left: 1350px;  
+    background: #fff ;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 61px;
+    right: 5px;  
+    /* display: none;  */
+    max-height: 0;
+    transition: max-height 0.3s;  
+    
+}
+
+.settings-menu-height{
+    max-height: 450px;
+
+}
+
+#user-profile a{
+     font-size: 12px;
+     color: #1876f2;
+     text-decoration: none;
+
+}
+.settings-menu-inner{
+    padding: 20px;
+}
+#settings-menu hr{
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+#settings-links{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+#settings-links #setting-icon{
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+#settings-links a{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+}
+#settings-links:hover{
+    background-color: #5150500f;
+    border-radius: 10px;
+}
+#seeYouProfileandhelp:hover{
+    background-color: #5150500f;
+}
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition:  padding-left 0.5s, background 0.5s;
+}
+#dark-btn span{
+     width: 18px;
+     height: 18px;
+     background: #fff;
+     border-radius: 50%;
+     display: inline-block;    
+}
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #000;
+}
+/* od tuka za login opcijata click */
+
+/* za sreach logo i header  */
+
+/* Od  desna nav i dr raboti */
+#photoright{
+    width: 100%;
+    height: 100%;
+}
+
+#zpPhotoLeft{
+ 
+    margin-top: 30px; 
+    margin-left: 65px;
+   
+}
+#pagepr{
+   color: #727070;
+}
+#zpPhotoLeft:hover{
+ background-color: #72707033;
+ border-radius: 30px;
+   
+}
+#zpPhotoGraphy{
+    width: 20%;
+    margin-top: -90px;
+    border-radius: 50px;
+    
+}
+
+#Switch{
+    
+    margin-left: 40px;
+    font-size: 9px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+    
+}
+#Switch:hover{
+    background-color: #6969692e;
+    border-radius: 30px;
+}
+
+#zpswich{
+  width: 20px;
+  height: 16px;
+  margin-top: -120px;
+  color: #d3d3d356;
+  border-radius: 90px;
+  margin-left: 15px;
+}
+#promotionText{
+    margin-left: 40px;
+    font-size: 9px;
+    margin-bottom: 64px;
+    margin-top: -70px;
+}
+#promotionText:hover{
+    background-color: #58585830;
+    border-radius: 30px;
+}
+#promotionPhoto{
+    width: 20px;
+    margin-top: -203px;
+    color: #d3d3d356;
+    border-radius: 60px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-left: 15px;
+
+}
+
+#FriendRequestsText{
+    color: #727070; 
+    margin-bottom: -60px;
+    margin-top: -30px;
+    
+}
+
+#seeAll{
+    float: right;
+    margin-top: 38px;
+    color: #318abe;
+    text-decoration: none;
+    
+}
+
+#NoleAdd{
+    width: 60px;
+    margin-top: -160px;
+    border-radius: 60px;
+    background-color: #000;
+}
+#NovakTextAdd {
+    margin-top: 80px;
+    margin-left: 66px;
+    
+    
+
+}
+#NovakTextAdd a{
+    text-decoration: none;
+    color: #000;
+    
+   
+    
+
+}
+#NovakTextAdd:hover{
+    background-color: #5d5d5d26;
+    border-radius: 30px;
+    
+}
+#NovakTextAdd a:hover{
+    color: #06496f9c;
+}
+#mutualFriends{
+    font-size: 10px;
+    margin-left: 90px;
+    margin-top: -10px;
+    color: #727070;
+   
+}
+#mutualFriendsPhoto{
+    width: 20px;
+    margin-left: 70px;
+    margin-top: -80px;
+}
+ 
+
+#ButtonTogether{
+   margin-left: 50px;
+   margin-top: -60px;
+   
+}
+
+#BirthdaysTextUp{
+     color: #727070;
+
+}
+#brthdayText{
+    font-size: 13px;
+    margin-left: 40px;
+
+}
+#brthdayText:hover{
+    background-color: #6161611d;
+    border-radius: 20px;
+ 
+
+}
+
+#BrithdayPhoto{
+    width: 30px;
+    margin-left: -40px;
+    margin-top: -90px;
+}
+#YourShortcuts{
+    color: #515050;
+}
+#EditPhotoShortcuts{
+    width: 20px;
+    margin-left: 110px;
+    margin-top: -80px;
+    background-color: #5b5b5b14;
+    
+    
+}
+#EditPhotoShortcuts:hover{
+    padding-bottom: 10px; 
+    padding: -20px;
+    box-shadow: 1px 1px 1px;border-radius: 30px;
+
+}
+
+#shortcutsText1{
+    margin-left: 50px;
+    margin-top: -50px;
+
+
+}
+#shortcutsPhoto1{
+    width: 90px;
+    height: 55px;
+    margin-left: -15px;
+    margin-top: -85px;
+    
+}
+#CodeAcademy{
+    text-decoration: none;
+    color: #000;
+}
+#CodeAcademy:hover{
+    color: #0a4e75;
+   
+    
+}
+
+
+/* Od  desna nav i dr raboti */
+
+/* main post  */
+#write-post{
+    width: 70%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin-top: 30px;
+    margin-left: 170px;
+    box-shadow: 1px 1px 10px;
+  
+    
+
+   
+   
+}
+#user-profile{
+    display: flex;
+    align-items: center;
+}
+#user-profile img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#user-profile p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+#user-profile small{
+    font-size: 12px;
+}
+.DownPhoto{
+    background-color: #009af3;
+    width: 4px;
+   
+}
+
+#PostInput{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+#PostInput textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+#PostButton{
+    margin-left: 250px;
+}
+#addPostLink{
+    display: flex;
+    margin-top: 6px;
+}
+#addPostLink a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin: 30px;
+    font-size: 13px;
+}
+
+#addPostLink img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+#postHomePage{
+    width: 70%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+    margin-left: 169px;
+    
+}
+#user-profile {
+    font-size: 13px;
+    color: #9a9a9a;
+    display: flex;
+    align-items: flex-start;
+
+}
+#post-text{
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: -190px;
+}
+
+/* #post-text span{
+    color: #626262;
+    font-weight: 500;
+} */
+
+#post-img{
+    width: 100%;
+    height: 650px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+#post-rows{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+#activity-icon section img{
+    width: 18px;
+    margin-right: 10px;
+
+}
+#activity-icon section img:hover{
+    background-color: #9bdaff;
+}
+#activity-icon section:hover{
+
+    background-color: #3d3c3c2e;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px;
+    
+
+}
+#activity-icon section {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+/* main post  */
+
+
+
+/* Profile Page Zdravko */
+#CoverProfile{
+    width: 60%;
+    margin-left: 18%;
+    height: 350px;
+    border-radius: 20px;
+}
+#cameraProfilePhoto{
+    width: 30px;
+    margin-left: -50px;
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 20px;
+    background-color: #c0c0c0;
+}
+#Coverjas{
+    width: 190px;
+    margin-top: -80px;
+    margin-left: 280px;
+    z-index: -1;
+}
+
+#TextProfilePhoto{
+   font-size: 30px;
+   font-weight: 500;
+}
+#friendsProfilePhoto{
+    margin-left: 475px;
+    margin-top:  -60px;
+    font-size: 14px;
+    color: #3d3c3c;
+}
+#coverFriendsProfile{
+    margin-left: 400px;
+    padding: 30px;
+   
+     
+}
+#FriendsPhotoProfile1{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+    margin-left: 35px;
+}
+
+#FriendsPhotoProfile2{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+    margin-left: -21px;
+}
+#FriendsPhotoProfile3{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+    margin-left: -21px;
+}
+#FriendsPhotoProfile4{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+    margin-left: -21px;
+}
+#FriendsPhotoProfile15{
+    width: 50px;
+    height: 45px;
+    margin-top: -90px;
+    margin-left: -21px;
+}
+
+#buttonForProfile{
+    margin-left: 950px;
+    margin-top: -145px;
+}
+#hrProfile {
+   width: 906px;
+   margin-left: 266px;
+   border: 0;
+   height: 0.2px;
+   margin-top: 30px;
+   
+}
+#hrtwo{
+    box-shadow: 1px 1px 1px;
+    margin-top: -0.5px;
+}
+#PozicijaZaNavZaProfile{
+   width: 60%;
+   margin-left: 260px;
+   background-color: #7272720b;
+   border-radius: 30px;
+   
+   
+}
+#PozicijaZaNavZaProfile a {
+    color: #000;
+}
+#PozicijaZaNavZaProfile a:hover {
+    color: #1e69f5;
+    background-color: #3d3c3c11;
+    border-radius: 30px;
+}
+#PostLeft{
+    width: 57%;
+    height: -140px;
+    margin-left: 440px;
+    margin-top:  -73%;
+}
+#PostButton1{
+    margin-left: 160px;
+}
+#TextodLevaStranaPost{
+    margin-left: 300px;
+    margin-top: -100px;
+}
+#myBtn1{
+    margin-left: 670px;
+    margin-top: 20px;
+}
+
+#myBtn2{
+    margin-left: 670px;
+    margin-top: 20px;
+
+}
+/* Profile Page Zdravko */
+
+
+/* isto samo za post */
+#Coverjas:hover{
+    opacity: 0.9;
+ 
+
+}
+#text{
+    margin-left: 270px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid cadetblue;
+    width: 310px;
+    height: 230px;
+
+     border-radius: 10px;
+     box-shadow: 0.4px 0px 0px;
+     background-image: url("/ImagesWeb/headerneewww.jpg");
+    background-size: cover;
+}
+#textIntro{
+    text-align: center;
+    font-size: 10px;
+ 
+
+}
+#textBioButton{
+    width: 270px;
+    margin-left: 30px;
+    margin-top: -70px;
+}
+#textBioButton:hover{
+    background-color: #79797995;
+    border-radius: 30px;
+}
+#textInfo{
+    margin-top: -120px;
+    margin-left: 280px;
+    font-size: 13px;
+}
+#textInfoFrom{
+    margin-top: -10px;
+    margin-left: 280px;
+    font-size: 13px;
+}
+#textInfoFollowed{
+    margin-top: -10px;
+    margin-left: 280px;
+    font-size: 13px;
+}
+#detalisButton{
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 270px;
+    
+}
+#detalisButton:hover{
+    background-color: #79797995;
+    border-radius: 30px;
+}
+#text1{
+    margin-left: 270px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid cadetblue;
+    width: 310px;
+    height: 310px;
+    background-color: white;
+     border-radius: 10px;
+     box-shadow: 0.4px 0px 0px;
+     margin-top: 35px;
+}
+
+#PhotoProfile1{
+    width: 150px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+  
+
+}
+#PhotoProfile2{
+    width: 150px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#PhotoProfile3{
+    width: 155px;
+    float: right;
+    margin-top: 5px;
+     padding: 2px;
+     border: 1px solid black;
+     border-radius: 10px;
+  
+}
+#PhotoProfile4{
+    width: 155px;
+    float: left;
+    margin-top: -105px;
+     padding: 2px;
+     border: 1px solid black;
+     border-radius: 10px;
+  
+}
+#seeAllPhotos{
+    margin-top: 90px;
+    margin-left: 385px;
+    
+}
+#FriendsProfileP{
+    margin-left: 270px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid cadetblue;
+    width: 310px;
+    height: 410px;
+    background-image: url("/ImagesWeb/headerneewww.jpg");
+    background-size: cover;
+    
+     border-radius: 10px;
+     box-shadow: 0.4px 0px 0px;
+     margin-top: 17px;
+}
+#friendsProfileP1{
+   display: flex;
+   font-size: 12px;
+   font-weight: 400;
+   margin-left: 7px;
+
+   
+}
+#RonaldoFriednPhoto1{
+    width: 150px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: -650px;
+    margin-left: 275px;
+    
+    
+}
+#RonaldoFriednPhoto1:hover{
+    opacity: 0.8;
+}
+#LebronFriednPhoto1:hover{
+    opacity: 0.8;
+}
+#LapmpardFriednPhoto1:hover{
+    opacity: 0.8;
+}
+#BredPiFriednPhoto1:hover{
+    opacity: 0.8;
+}
+#textPhotoProfile1 a {
+    text-decoration: none;
+    color: #000;
+}
+#textPhotoProfile2 a{
+    text-decoration: none;
+    color: #000;
+}
+#textPhotoProfile3 a{
+    text-decoration: none;
+    color: #000;
+}
+#textPhotoProfile4 a{
+    text-decoration: none;
+    color: #000;
+}
+#textPhotoProfile1{
+    
+    margin-left: 296px;
+    margin-top:  -280px;
+    font-size: 12px;
+}
+#LebronFriednPhoto1{
+    width: 150px;
+    height: 114px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: -206px;
+    margin-left: 427px;
+    
+}
+#textPhotoProfile2{
+    margin-top: -60px;
+    margin-left: 460px;
+    font-size: 13px;
+
+}
+#LapmpardFriednPhoto1{
+    width: 150px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-left: 425px;
+}
+#textPhotoProfile3{
+    margin-top: 1px;
+    margin-left: 460px;
+    font-size: 13px;
+}
+#BredPiFriednPhoto1{
+    width: 150px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: -213px;
+    height: 114px;
+    margin-left: 272px;
+}
+#textPhotoProfile4{
+     margin-top: -60px;
+     margin-left: 320px;
+     font-size: 13px;
+}
+#ButtonAllFriends{
+    margin-left: 355px;
+    margin-top: 25px;
+}
+
+
+#post-img1{
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#postHomePage1{
+    width: 40%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+    margin-left: 610px;
+    margin-top: 10px;
+    
+}
+#activity-icon1 section img{
+    width: 18px;
+    margin-right: 10px;
+
+}
+#activity-icon1 section img{
+    width: 18px;
+    margin-right: 10px;
+
+}
+#activity-icon1 section img:hover{
+    background-color: #9bdaff;
+}
+#activity-icon1 section:hover{
+
+    background-color: #3d3c3c2e;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px;
+    
+
+}
+#activity-icon1 section {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 38px;
+}
+
+
+/* za Sliki preview */
+
+#photo-preview {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    margin-left: 270px;
+    margin-top: 50px;
+    background-image: url("/ImagesWeb/headerneewww.jpg");
+    background-size: cover;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 310px;
+   
+ 
+}
+#seeALLPhotoProfile:hover{
+    background-color: #a3a3a356;
+    box-shadow: 1px 1px 5px;
+    border-radius: 10px;
+    
+ 
+}
+#ButtonAllFriends:hover{
+    background-color: #a3a3a356;
+    box-shadow: 1px 1px  3px;
+    border-radius: 10px;
+    
+ 
+}
+
+#photo-preview img {
+  position: relative;
+  margin: 5px;
+  max-width: 200px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  width: 130px;
+  
+}
+
+#photo-preview img:hover {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.image-upload>input {
+    display: none;
+  }
+
+/* za Input Logout Page */
+#form:hover{
+        border: 2px solid rgb(0, 76, 255);
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 98, 255, 0.84);
+        
+
+      }
+      #form{
+        border: 2px solid rgb(0, 229, 255);
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px;
+        width: 270px;
+        margin-left: 800px;
+        margin-top: -10px;
+        padding-bottom: 100px;
+        background-image: url("https://images.unsplash.com/photo-1630890102474-f9b4236f26c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1cnJlZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+      }
+      #submit{
+        margin-left: 40px;
+        width: 200px;
+        
+      }
+      #submit:hover{
+        margin-left: 40px;
+        background-color: aquamarine;
+        text-shadow: 1px 10px 10px;
+        
+      }
+      #email{
+        width: 250px;
+        margin-left: 10px;
+        margin-top: 15px;
+      }
+      #password{
+        width: 250px;
+        margin-left: 10px;
+
+      }
+      #ForgotPassword{
+        margin-left: 80px;
+        font-size: 14px;
+        color: #009af3;
+       
+      }
+      #ForgotPassword a{
+        text-decoration: none;
+      }
+      #ForgotPassword a:hover{
+        color: #01a7b0c3;
+      }
+      #createNewAccount{
+        margin-left: 41px;
+        width: 199px;
+      }
+   
+   
+
+      #SlikaLogozaLogout{
+        width: 180px;
+        margin-left: 300px;
+        margin-top: 90px;
+        animation-name: example3;
+        transition: 5s;
+        animation-duration: 5s;
+     
+      }
+      @keyframes example3 {
+        0%   {border-radius: 80px; background-color: #002d805a;}
+        25%  {border-radius: 90px; background-color: #00389f16;}
+        50%  {border-radius: 90px; background-color: #01236214;}
+        75%  {border-radius: 90px; background-color: #03256411;}
+        100% {border-radius: 90px; background-color: #0058fc00;}
+      }
+      @keyframes example1 {
+        0%   {color: #009af300;}
+        25%  {color: #009af32a;}
+        50%  {color: #009af37e;}
+        75%  {color: #052c42a4;}
+        100% {color: #000000;}
+      }
+    
+      #textLogUut{
+        margin-left: 350px;
+        margin-top: -40px;
+        font-weight: 600;
+        font-size: 30px;
+        animation-name: example1;
+        transition: 5s;
+        animation-duration: 5s;
+      }
+      #textLogUut1{
+        margin-left: 350px;
+        margin-top: -20px;
+        font-size: 14px;
+        color: #3d3c3c;
+      }
+
+      .card{
+        margin-top: -350px;
+        margin-left: 348px;
+        width: 180px;
+        
+      }
+      .card-text{
+        text-align: center;
+        text-decoration: none;
+        
+      }
+      .card1{
+        margin-top: -225px;
+        margin-left: 548px;
+        width: 180px;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+
+      }
+      #CardFriends1{
+        box-shadow: 1px 1px 5px;
+      }
+
+      /* #SlikaLogozaLogout:hover{
+        /* background-color: #1e69f53e;
+        border-radius: 150px;
+        transition: 2s;
+        animation-name: example1;
+        animation-duration: 2ms; */
+       
+        
+      
+     
+     
+      .card-img-top{
+        background-color: #3d3c3c;
+      } 
+      .card-text1{
+        color: #009af3;
+        text-align: center;
+        text-decoration: none;
+        
+      }
+      #textDeco{
+        text-decoration: none;
+        color: #000;
+      }
+      #textDeco:hover{
+        color: #1876f2;
+        opacity: 0.9;
+        
+      }
+      #textDeco1{
+        
+        text-decoration: none;
+      }
+      #textDeco1:hover{
+        opacity: 0.9;
+        color: #0a4e75;
+      }
+      
+
+
+
+/* za Input Logout Page */
+
+/* PageFriends */
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #80d2e876;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #533c3c41;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  #textFriendPAGE{
+    font-weight: 600;
+  }
+  #FriendRequestsTextPage{
+    margin-top: 15px;
+    margin-left: 79px;
+    font-weight: 500;
+  }
+  #settingsFriendPage:hover{
+    border: 1px solid rgba(107, 107, 107, 0.64);
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px;
+  }
+
+/* CardFriends */
+#CardFriends1{
+    margin-top: 40px;
+    margin-left: 50px;
+    border: 1px solid black;
+    width: 221px;
+    background-color: #ffffff;
+   
+}
+
+#CardFriends1:hover{
+    opacity: 0.9;
+
+}
+#deleteColor{
+    background-color: #94949458;
+}
+#deleteColor:hover{
+    background-color: #6861619a;
+}
+
+#cardBody{
+    margin-left: 50px;
+  
+}
+#textTile1{
+     margin-left: -10px;
+
+}
+#TextCardDown{
+    font-size: 13px;
+    margin-top: -10px;
+}
+#cardBody a{
+    display: grid;
+    margin-left: -29px;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+    
+}
+#moreCardFriends{
+    padding: 30px;
+
+    margin-top: -40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+/* Page Other Friends */
+
+#friendsProfilePageText{
+    margin-top: -50px;
+    margin-left: 280px;
+    font-weight: 600;
+    font-size: 25px;
+}
+#ronaldoPhotoFriendPage1:hover{
+    opacity: 0.8;
+}
+#FriendRequestsProfilePage{
+    margin-left: 1009px;
+    margin-top: 30px;
+  
+}
+#FriendRequestsProfilePage1{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#sreachFriendPage{
+    width: 300px;
+    margin-left: 700px;
+    margin-top: -46px;
+}
+#navbarProfileFriends{
+    margin-left: 270px;
+    
+}
+#navbarProfileFriends a{
+    color: #000;
+}
+#navbarProfileFriends a:hover{
+    color: #52ad8f;
+}
+#friendsCardAll{
+    margin-left: 270px;
+    border: 1px solid rgba(0, 0, 0, 0.138);
+    width: 900px;
+    background-color: white;
+    
+}
+#friendsCardAll1{
+    margin-left: 500px;
+    margin-top: -410px;
+
+}
+#friendsCardAll2{
+    margin-left:720px ;
+    margin-top: -410px;
+
+}
+#friendsCardAll3{
+    margin-left:920px ;
+    margin-top: -410px;
+
+}
+#ronaldoTextPageProfilePage1{
+    margin-left: 70px;
+    margin-top: 62px;
+    font-size: 13px;
+    color: #696969;
+}
+#ronaldoPhotoFriendPage1{
+    margin-top: -60px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px;
+    
+}
+#ronaldoTextPageProfilePage2{
+    margin-left: 70px;
+    margin-top: -60px;
+    
+   
+
+}
+/* za PhotosPage */
+ #inpuButton{
+    margin-left: 960px;
+    margin-top: -40px;
+    
+}
+#addPhotoVideo{
+    margin-left: 817px;
+    margin-top: -50px;
+}
+#PhotosPage{
+    margin-left: 280px;
+    font-weight: 550;
+    font-size: 25px;
+    margin-top: -10px;
+}
+#navbarPhotos{
+    margin-left: 270px;
+    margin-top: 20px;
+}
+#photo-preview1{
+    margin-left: 270px;
+    margin-top: 10px;
+    
+    
+    
+}
+
+
+  #photo-preview1 img:hover {
+    opacity: 0.8;
+  }
+  #photo-preview1 img{
+    border-radius: 10px;
+    
+
+  }
+  #photo-preview11{
+    margin-left: 270px;
+    margin-top: 10px;
+    
+
+  }
+  #albumPhoto1{
+    margin-left: 30px;
+    margin-top: 45px;
+  }
+  #albumPhoto2{
+    margin-left: -1px;
+    margin-top: 45px;
+
+  }
+  #CreateAlbum{
+    margin-left: 340px;
+    margin-top: -10px;
+  }
+  #CoverPhotos{
+    margin-left: 620px;
+    margin-top: -50px;
+    
+  }
+  #myPhotoGraphy{
+    margin-left: 890px;
+    margin-top: -65px;
+  }
+  #item1p{
+    font-size: 13px;
+    margin-left: 25px;
+    color: #878787;
+  }
+  #item2p{
+    font-size: 13px;
+    margin-left: 25px;
+    color: #878787
+
+  }
+  #photo-preview11 img:hover {
+    opacity: 0.8;
+  }
+ /* Page About */
+#AboutText{
+    margin-left: 279px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navBarP{
+    margin-left: 50px;
+    width: 0px;
+    
+}
+#ButoonInfroAbout{
+    display: grid;
+    width: 230px;
+    height: auto;
+    margin-left: 274px;    
+    padding: 4px;
+    margin-top:  -216px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0.8px 0.8px 6px;
+     
+
+}
+#AddWorkplace{
+    margin-left: 510px;
+    margin-top: -27px;
+
+}
+#AllAbout{
+    margin-left: 510px;
+    margin-top: 10px;
+    padding: 30px;
+    
+}
+#LivesSkopje{
+    padding-bottom: 10px;
+    border: 1px solid black;
+    width: 330px;
+    box-shadow: 1px 1px 6px;
+    background-image: url("https://img.freepik.com/premium-photo/window-shadow-drop-white-wall-background_293060-7227.jpg");
+    
+}
+#FromSkopje{
+    padding-bottom: 10px;
+    border: 1px solid black;
+    width: 330px;
+    box-shadow: 1px 1px 6px;
+    background-image: url("https://media.istockphoto.com/id/1322376077/photo/abstract-white-studio-background-for-product-presentation-empty-room-with-shadows-of-window.jpg?s=170667a&w=0&k=20&c=2PsVSOhp0cXBmIW1xz5qXOd3McUWo29F3Nu5RmY53GQ=");
+    background-size: cover;
+    
+}
+#phone{
+    border: 1px solid black;
+    width: 330px;
+    box-shadow: 1px 1px 6px;
+    background-image: url("https://t3.ftcdn.net/jpg/04/39/10/08/360_F_439100805_UHSubIVud8xJAw46w0rls5arMXmCNPph.jpg");
+    background-repeat: repeat;
+
+}
+/* ZA POST */
+#demo{
+    margin-top: 60px;
+    margin-left: -190px;
+    font-size: 15px;
+}
+#ImagesUpload{
+    margin-left: 200px;
+
+}
+
+/* za post pozicija upload */
+#uploadedImg{
+    
+    margin-left: 500px;
+    margin-top: 40px;
+    width: 300px;
+    
+    
+
+    
+}
+/* za kopceto edit About */
+#bio-textarea{
+    margin-top: -30px;
+    width: 300px;
+    height: 40px;
+}
+#bio-textarea1{
+    margin-top: -45px;
+    width: 300px;
+    height: 40px;
+}
+
+/* new acc button */
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ .modal-content{
+    opacity: 0.9;
+    
+}
+  
+#tablePo{
+    margin-top: 50px;
+    margin-left:  -300px;
+}
+/* za post text */
+#output{
+ margin-left: -150px;
+ margin-top: -20px;
+ font-size: 17px;
+color: #000;
+}
+  
+/* text postText Profile */
+#PostProfileText{
+    margin-left: 610px;
+    font-size: 20px;
+    background-color: white;
+    width: 610px;
+    padding: 50px;
+    border-radius: 10px;
+    
+}

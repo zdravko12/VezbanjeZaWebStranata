@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/zadacaedit.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Logout</title>
+  </head>
+  <style>
+    body{
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/009/167/359/original/summer-concept-the-motion-of-leaves-sunlight-natural-shadow-overlay-on-white-texture-background-for-overlay-on-product-presentation-backdrop-and-mockup-free-video.jpg");
+    }
+  </style>
+  <body>
+    <main>
+        <section>
+        <figure>
+            <img src="/ImagesWeb/zpSocialLogo.png" id="SlikaLogozaLogout" title="Zdravko">
+        </figure>
+        <p id="textLogUut">Recent Logins</p>
+         <p id="textLogUut1" >Click your picture or add an account.</p>
+
+
+
+        <form  id="form"onsubmit="return validateForm()"> 
+           
+          
+           <input type="email" id="email" name="email" required title="Mail" placeholder="Email"></br>
+           <section id="emailError" class="error"></section></br>
+   
+         
+           <input type="password" id="password" name="password" required minlength="8" title="password" placeholder="Password"></br>
+           <section id="passwordError" class="error"></section></br>
+   
+           <input id="submit" type="submit" value="Log in"></br>
+           <label id="ForgotPassword"><a href="" >Forgot password?</a></label><hr>
+           <button onclick="createNewAccount()" type="button" class="btn btn-primary" style="margin-left: 50px;">Create new account</button>
+            <!-- <button type="button" class="btn btn-primary" id="createNewAccount" >Create new account</button> -->
+           
+           
+            
+   
+         
+       </form>
+       </section>
+
+       <section>
+        <div class="card">
+            <a href="/Profile/profile.html" id="textDeco"><img src="/ImagesWeb/webImage1LogOut.png" class="card-img-top" alt="..." title="Zdravko">
+            <div class="card-body">
+              <p class="card-text">Zdravko</p></a>
+            </div>
+          </div>
+
+    </section>
+    <section>
+         <div class="card1">
+            <a href="" id="textDeco1"><img src="/ImagesWeb/add.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text1"> Add Account</p></a>
+            </div>
+          </div>
+
+    </section>
+
+   <!-- za new accaunt -->
+<div id="newAccountModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 style="margin-left: 520px;">Create new account</h2>
+    <form style="border: 2px solid black; width: 350px; border-radius: 10px; box-shadow: 1px 1px 5px; background-image: url('https://media.istockphoto.com/id/1164221262/photo/gray-shadow-of-the-leaves-on-a-white-wall.jpg?s=612x612&w=0&k=20&c=5AUctt7YL3Jjty5kajOBUYB9Ffiqi2Xq-JZOwcm21gM='); margin-left: 500px;">
+      <label for="firstName" style="box-shadow: 1px 1px 5px; font-weight: 500;">First name:</label>
+      <input type="text" id="firstName" name="firstName" required style="border-radius: 5px; box-shadow: 1px 1px 1px;"><br><br>
+      <label for="lastName"style="box-shadow: 1px 1px 5px;font-weight: 500;">Last name:</label>
+      <input type="text" id="lastName" name="lastName" required style="border-radius: 5px; box-shadow: 1px 1px 1px;"><br>
+      <label for="email" style="box-shadow: 1px 1px 5px;font-weight: 500;">Email:</label>
+      <input type="email" id="email" name="email" required style="border-radius: 5px; box-shadow: 1px 1px 1px;"><br><br>
+      <label for="password" style="box-shadow: 1px 1px 5px;font-weight: 500;">Password:</label>
+      <input type="password" id="password" name="password" required style="border-radius: 5px; box-shadow: 1px 1px 1px;"><br><br>
+      <label for="date1" style="box-shadow: 1px 1px 5px;font-weight: 500;">Birthday</label>
+      <input type="date" id="date1" name="date" required style="border-radius: 5px; box-shadow: 1px 1px 1px;"><br><br>
+      <label for="Gender" style="box-shadow: 1px 1px 5px;font-weight: 500;">Gender</label>
+      <input type="radio" id="html" name="fav_language" value="Female">
+      <label for="html">Female</label>
+      <input type="radio" id="css" name="fav_language" value="Male">
+      <label for="css">Male</label><br><br><br>
+      <button type="submit" style="margin-left: 90px; margin-bottom: 10px; " class="btn btn-primary">Create account</button>
+      
+    </form>
+  </div>
+</div>
+
+    
+
+ 
+
+
+
+    
+         
+         
+
+
+
+    </main>
+    <script src="/webSite1.js"></script>
+  </body>
+</html>
